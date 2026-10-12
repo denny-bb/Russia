@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NEXUS · Estudar na Rússia — Inscrição</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav><a class="brand" href="#topo">NEXUS</a><a class="cta" href="#inscricao">Inscrever-me</a></nav>
+
+<header class="hero" id="topo"><div class="wrap">
+ <div>
+  <div class="flag" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="tag">NEXUS · Webinar</div>
+  <h1>Estudar<br>na <em>Rússia</em></h1>
+  <p class="sub">Oportunidades, bolsas de estudo e experiências reais de estudantes. Uma conversa aberta para jovens moçambicanos.</p>
+  <div class="chips">
+   <div class="chip"><b>Data e horário</b> 17.10.2026 </div>
+   <div class="chip"><b>Duração</b>90 minutos</div>
+   <div class="chip"><b>Onde</b>Google Meet</div>
+  </div>
+  <a class="btn" href="#inscricao">QUERO PARTICIPAR</a>
+ </div>
+ <div class="photo"><img src="img/capa.jpg" alt="Lakhta Center, São Petersburgo"><span>Lakhta Center, São Petersburgo</span></div>
+</div></header>
+
+<section class="rv"><div class="wrap">
+ <h2>O que vais <span>descobrir</span></h2>
+ <p class="lead">Informação clara e experiências reais, sem promessas milagrosas.</p>
+ <div class="grid">
+  <div class="card"><div class="n">1</div><h3>Bolsas de estudo</h3><p>Modalidades e a diferença entre bolsa e admissão.</p></div>
+  <div class="card"><div class="n">2</div><h3>Universidades e cursos</h3><p>Como pesquisar e escolher o teu caminho.</p></div>
+  <div class="card"><div class="n">3</div><h3>Candidaturas e documentos</h3><p>Passos, documentos e tradução.</p></div>
+  <div class="card"><div class="n">4</div><h3>Língua russa</h3><p>Idiomas de ensino e preparação.</p></div>
+  <div class="card"><div class="n">5</div><h3>Custos e alojamento</h3><p>O que planear antes de viajar.</p></div>
+  <div class="card"><div class="n">6</div><h3>Vida e adaptação</h3><p>Dia a dia, cultura, clima e desafios.</p></div>
+ </div>
+</div></section>
+
+<section class="alt rv"><div class="wrap">
+ <h2>Quem <span>vai conversar</span></h2>
+ <p class="lead">Estudantes que conhecem o caminho, e um moderador para guiar a conversa.</p>
+ <div class="people">
+  <div class="person"><img src="img/fernando.jpg" alt="Eng. Fernando Júnior"><div class="role">Orador</div><h3>Eng. Fernando Júnior</h3></div>
+  <div class="person"><img src="img/mayte.jpg" alt="Eng. Mayte"><div class="role">Oradora</div><h3>Eng. Mayte</h3></div>
+  <div class="person"><img src="img/denny.jpg" alt="Eng. Denny Baloi"><div class="role">Moderador</div><h3>Eng. Denny Baloi</h3></div>
+ </div>
+</div></section>
+
+<section class="rv" id="inscricao"><div class="wrap">
+ <h2>Faz a tua <span>inscrição</span></h2>
+ <p class="lead">Preenche os dados. No fim, envias a inscrição por WhatsApp à organização e recebes o link do Meet e a data confirmada.</p>
+ <form id="f" novalidate>
+  <div class="row">
+   <div class="f" data-r><label for="nome">Nome completo *</label><input id="nome" autocomplete="name" placeholder="O teu nome"><div class="err">Indica o teu nome.</div></div>
+   <div class="f" data-r><label for="wa">WhatsApp *</label><input id="wa" type="tel" inputmode="tel" autocomplete="tel" placeholder="+258 84 000 0000"><div class="err">Indica um número válido.</div></div>
+  </div>
+  <div class="row">
+   <div class="f"><label for="mail">Email <small>(opcional)</small></label><input id="mail" type="email" autocomplete="email" placeholder="nome@exemplo.com"></div>
+   <div class="f" data-r><label for="cid">Cidade / Província *</label><input id="cid" placeholder="Ex.: Xai-Xai, Gaza"><div class="err">Indica a tua cidade.</div></div>
+  </div>
+  <div class="f" data-r><label for="niv">Nível actual *</label>
+   <select id="niv"><option value="">Seleccionar…</option><option>12.ª classe</option><option>Ensino técnico-profissional</option><option>Licenciatura em curso</option><option>Licenciado(a)</option><option>Mestrado ou superior</option><option>Outro</option></select><div class="err">Escolhe uma opção.</div></div>
+  <div class="f"><label for="area">Área de interesse <small>(opcional)</small></label><input id="area" placeholder="Ex.: Engenharia, Medicina, Informática"></div>
+  <div class="f"><span class="lab">Já pesquisaste sobre estudar na Rússia?</span>
+   <div class="opts"><label><input type="radio" name="pq" value="Ainda não" checked>Ainda não</label><label><input type="radio" name="pq" value="Um pouco">Um pouco</label><label><input type="radio" name="pq" value="Já, bastante">Já, bastante</label></div></div>
+  <div class="f"><label for="duv">O que gostarias de ver respondido? <small>(opcional)</small></label><textarea id="duv" placeholder="Escreve as tuas dúvidas…"></textarea></div>
+  <div class="f" data-r><label class="chk"><input type="checkbox" id="ok">Aceito que a NEXUS use estes dados apenas para organizar o webinar e me contactar.</label><div class="err">Precisas de aceitar para continuar.</div></div>
+  <button class="btn" type="submit" style="width:100%">INSCREVER-ME</button>
+  <div class="msg" id="msg"></div>
+ </form>
+</div></section>
+
+<footer><b>NEXUS</b><br>Conecta. Aprende. Conquista.<br><small>Requisitos e prazos de bolsas devem ser confirmados nas fontes oficiais.</small></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
